@@ -67,4 +67,4 @@ not a general scalability guarantee. Book RPG describes the documented implement
 as reviewed in September 2026; it does not claim an aggregate reliability benchmark.
 
 - https://github.com/Gozzy82/amsterdam750-public
-- Book RPG implementation documentation (private repository; no public source link).
+- https://github.com/Gozzy82/book-rpg-public (sanitized source snapshot)
