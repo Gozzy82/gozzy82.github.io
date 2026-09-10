@@ -39,7 +39,15 @@ apex A records with these four GitHub Pages targets:
 | A | gerko.amsterdam | 185.199.110.153 |
 | A | gerko.amsterdam | 185.199.111.153 |
 
-Remove the old apex AAAA record so IPv6 does not send visitors to the previous host.
+For IPv6, replace old apex AAAA records with these GitHub Pages targets:
+
+| Type | Name | Value |
+| --- | --- | --- |
+| AAAA | gerko.amsterdam | 2606:50c0:8000::153 |
+| AAAA | gerko.amsterdam | 2606:50c0:8001::153 |
+| AAAA | gerko.amsterdam | 2606:50c0:8002::153 |
+| AAAA | gerko.amsterdam | 2606:50c0:8003::153 |
+
 Leave mail-related MX, SPF, DKIM and DMARC records intact.
 Do not point wildcard records at GitHub Pages.
 For www, add a dedicated CNAME from `www.gerko.amsterdam` to `gozzy82.github.io.`.
@@ -59,4 +67,4 @@ not a general scalability guarantee. Book RPG describes the documented implement
 as reviewed in September 2026; it does not claim an aggregate reliability benchmark.
 
 - https://github.com/Gozzy82/amsterdam750-public
-- https://github.com/Gozzy82/koreader-story-rpg
+- Book RPG implementation documentation (private repository; no public source link).
