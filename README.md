@@ -14,7 +14,9 @@ No dependencies or build step are required. All internal links work on GitHub Pa
 
 ## Preview locally
 
-Run `python -m http.server 8000` from the repository and open http://localhost:8000.
+Serve the repository root with a local static web server of your choice, then open
+its local address in your browser. No build step, package installation or
+project-specific server script is needed.
 
 ## Portfolio positioning and contact
 
@@ -27,21 +29,6 @@ Both pages link to `/#contact`. The contact button opens the existing public
 LinkedIn profile at https://nl.linkedin.com/in/gerko-schrieken-b1853246.
 No private/account email, contact form, analytics or placeholder CV link is added.
 Update the availability text when the job search changes.
-
-## Check the site
-
-The optional checks use Python 3.10+ and only the standard library:
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-They check the two pages, internal links and fragments, local assets, navigation,
-contact destination, page metadata and key evidence/limitation wording. They also
-exercise the link checker with deliberately broken examples. They do not contact
-external sites, run browser/layout tests or validate the application repositories.
-
-No test framework, JavaScript runtime or build step is added to the website.
 
 ## Enable GitHub Pages
 
