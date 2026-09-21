@@ -14,7 +14,21 @@ No dependencies or build step are required. All internal links work on GitHub Pa
 
 ## Preview locally
 
-Run `python -m http.server 8000` from the repository and open http://localhost:8000.
+Serve the repository root with a local static web server of your choice, then open
+its local address in your browser. No build step, package installation or
+project-specific server script is needed.
+
+## Portfolio positioning and contact
+
+The homepage introduces Gerko as a senior software engineer with a background in
+.NET, React, TypeScript and Azure. Amsterdam 750 remains the first project;
+Book RPG is explicitly described as experimental. Availability for new roles is
+stated in the introduction and contact section.
+
+Both pages link to `/#contact`. The contact button opens the existing public
+LinkedIn profile at https://nl.linkedin.com/in/gerko-schrieken-b1853246.
+No private/account email, contact form, analytics or placeholder CV link is added.
+Update the availability text when the job search changes.
 
 ## Enable GitHub Pages
 
