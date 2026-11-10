@@ -77,8 +77,18 @@ Official instructions:
 ## Content sources
 
 The Amsterdam 750 figures refer to the published five-minute load test with 250 virtual users,
-not a general scalability guarantee. Book RPG describes the documented implementation
-as reviewed in September 2026; it does not claim an aggregate reliability benchmark.
+not a general scalability guarantee. Book RPG keeps two validation scopes separate:
+
+- The standalone public source snapshot of 21 September 2026: 1,120 regular tests passed,
+  with 0 failures and 0 skipped tests.
+- The Vue 3 / Nuxt 4 implementation merged on 4 November 2026: its PR reports 32 passing
+  desktop/mobile browser tests, including 14 screenshot comparisons with the original
+  interface. Playwright uses an isolated fixture API without real saves or live AI calls.
+
+The Vue/Nuxt client uses the existing backend API and saved games and is available locally.
+The Azure demo still serves the original frontend. The public source link remains the
+September snapshot and does not include the later Vue/Nuxt implementation. No aggregate
+reliability benchmark is claimed.
 
 - https://github.com/Gozzy82/amsterdam750-public
 - https://github.com/Gozzy82/book-rpg-public (sanitized source snapshot)
